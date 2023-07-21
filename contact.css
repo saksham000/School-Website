@@ -117,11 +117,6 @@ input, textarea{
     color: var(--color-white);
 }
 
-.contactForm .btn{
-    width: max-content;
-    margin-top: 1rem;
-    cursor: pointer;
-}
 
 
 
@@ -178,7 +173,7 @@ input, textarea{
 }
 
 
-.button {
+.button2 {
     --primary: #275efe;
     --primary-dark: #2055ee;
     --primary-darkest: #133fc0;
@@ -240,8 +235,8 @@ input, textarea{
     -webkit-tap-highlight-color: transparent;
 }
 
-.button .left,
-.button .right {
+.button2 .left,
+.button2 .right {
     position: absolute;
     left: 0;
     right: 0;
@@ -251,10 +246,10 @@ input, textarea{
     transform: translate(calc(var(--plane-x) * 1px), calc(var(--plane-y)* 1px)) translateZ(0);
 }
 
-.button .left::after,
-.button .right::after,
-.button .left::before,
-.button .right::before {
+.button2 .left::after,
+.button2 .right::after,
+.button2 .left::before,
+.button2 .right::before {
     content: "";
     position: absolute;
     left: 0;
@@ -270,7 +265,7 @@ input, textarea{
             calc(var(--third-x, var(--left-wing-third-x)) * 1%) calc(var(--third-y, var(--left-wing-third-y)) * 1%));
 }
 
-.button .left::after {
+.button2 .left::after {
     --x: 0;
     --z-index: 1;
     --background: var(--left-body-background);
@@ -282,7 +277,7 @@ input, textarea{
     --third-y: var(--left-body-third-y);
 }
 
-.button .right::before {
+.button2 .right::before {
     --x: -0.4%;
     --z-index: 2;
     --background: var(--right-wing-background);
@@ -294,7 +289,7 @@ input, textarea{
     --third-y: var(--right-wing-third-y);
 }
 
-.button .right::after {
+.button2 .right::after {
     --x: 0;
     --z-index: 1;
     --background: var(--right-body-background);
@@ -306,14 +301,14 @@ input, textarea{
     --third-y: var(--right-body-third-y);
 }
 
-.button span {
+.button2 span {
     display: block;
     position: relative;
     z-index: 4;
     opacity: var(--text-opacity);
 }
 
-.button span.success {
+.button2 span.success {
     z-index: 0;
     position: absolute;
     left: 0;
