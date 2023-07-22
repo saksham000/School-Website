@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./annouce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav>
+            <div class="container navContainer">
+                <a href="index.html"><h4>School Name</h4></a>
+                <ul class="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">AboutUs</a></li>
+                    <li><a href="annoce.html">Announcement</a></li>
+                    <li><a href="contactus.html">ContactUS</a></li>
+                </ul>
+                <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <button id="close-menu-btn"><i class="fa-solid fa-x"></i></button>
+            </div>
+        </nav>
+
+
+        <!-- end of nav bar -->
+
+
+
+
+
+
+        <section class="announcement ">
+            <div class="annouceHeader container">
+                <h1>Announcement</h1>
+                <img src="./images/pngwing.com.png">
+            </div>
+
+
+
+            <div class="slideshowConatiner swiper mySwiper">
+                <div class="slideshowImg swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                    <div class="swiper-slide"><img src="./images/fullsize.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="container announceContainer">
+                <h2>Top News</h2>
+                <div class="newsText">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, accusamus.</p>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <footer >
+            <div class="container footerContainer">
+                <div class="footer1">
+                    <a href="./index.html" class="footerLogo"><h4>School Name</h4></a>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus.
+                    </p>
+
+                </div>
+
+                <div class="footer2">
+                    <h4>Permalinks</h4>
+                    <ul class="permalinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">AboutUs</a></li>
+                        <li><a href="./annoce.html">Announcement</a></li>
+                        <li><a href="./contactus.html">ContactUs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer3">
+                    <ul class="privacy">
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms anad condiction</a></li>
+                        <li><a href="#">refund ploicy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer4">
+                    <h4>contact us</h4>
+                    <div>
+                        <p>8360132497</p>
+                        <p>xyz@gmail.com</p>
+                    </div>
+
+                    <ul class="footerSocials">
+                        <li><a href="#"><i class="fa-brands fa-linkedin icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram icon"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerCopyright">
+                <small>copyright &copy; School Name</small>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

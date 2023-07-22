@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+
+.annouceHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 45;
+}
+
+
+.annouceHeader img{
+  height: 5rem;
+  width: 5rem;
+}
+
+/* .slideshowImg img{
+  height: 32.5rem;
+  height: 50rem;
+  width: 100%;
+  object-fit: contain;
+  margin-top: 1rem;
+} */
+
+
+/* swipper js code */
+
+.swiper {
+  width: 55%;
+  /* height: 22rem; */
+  height: 40%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.announceContainer{
+  background: var(--color-bg1);
+  height: 35rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.announceContainer h2{
+  position: relative;
+  top: 0.6rem;
+  /* border: 2px solid red; */
+  margin-bottom: 2rem;
+}
+
+
+.newsText p{
+  display: grid;
+  grid-template-rows: 1fr;
+  /* border: 1px solid red; */
+  height: 4rem; 
+  font-size: 1.5rem;
+  background: linear-gradient(87deg, rgba(101, 47, 255, 0.50) 0%, rgba(226, 197, 197, 0.13) 100%);
+  box-shadow: 3px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 0.5rem; 
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 98%;
+  text-align: center;
+}
+
+
+
+/* media query for phone */
+
+
+@media screen and (max-width: 600px){
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .annouceHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  
+  .annouceHeader img{
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+
+  .swiper{
+    margin-top: 0rem;
+    width: 100%;
+    height: 40%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .newsText p{
+    font-size: 1rem;
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background: linear-gradient(87deg, rgba(101, 47, 255, 0.50) 0%, rgba(226, 197, 197, 0.13) 100%);
+    box-shadow: 3px 6px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 95%;
+  }
+
+  .announceContainer{
+    background: var(--color-bg1);
+    height: 35rem;
+    border-radius: 1rem;
+  }
+
+}
