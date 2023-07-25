@@ -457,7 +457,7 @@ header {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: -1.5rem;
   transform: rotate(45deg);
 }
